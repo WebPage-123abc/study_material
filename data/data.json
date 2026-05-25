@@ -1,0 +1,601 @@
+{
+  "meta": {
+    "studentName": "Your Name",
+    "semester": "Semester 3 — 2026",
+    "totalSubjects": 7,
+    "totalUnitsPerSubject": 5
+  },
+  "subjects": [
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "shortName": "MATH",
+      "description": "Advanced calculus, linear algebra, and discrete mathematics",
+      "color": "#6366f1",
+      "icon": "📐",
+      "units": [
+        {
+          "id": "math-u1",
+          "title": "Differential Calculus",
+          "description": "Limits, derivatives, and their applications in real-world problems",
+          "resources": {
+            "notes": [
+              { "title": "Derivatives — Complete Notes", "url": "#", "description": "Handwritten notes covering all derivative rules" },
+              { "title": "Chain Rule Explained", "url": "#", "description": "Step-by-step derivation with examples" }
+            ],
+            "pdfs": [
+              { "title": "Calculus Textbook Ch. 1–3", "url": "#", "description": "Primary textbook chapters" },
+              { "title": "Practice Worksheet Set A", "url": "#", "description": "40 problems with solutions" }
+            ],
+            "videos": [
+              { "title": "3Blue1Brown — Essence of Calculus", "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM", "description": "Visual intuition for derivatives" },
+              { "title": "Professor Leonard — Derivatives Lecture", "url": "https://www.youtube.com/watch?v=5yfh5cf4-0Y", "description": "Full university lecture" }
+            ],
+            "pyqs": [
+              { "title": "2024 Mid-Sem Paper", "url": "#", "description": "Previous year questions with solutions" },
+              { "title": "2023 End-Sem Paper", "url": "#", "description": "Solved paper" }
+            ],
+            "practice": [
+              { "title": "50 Derivative Problems", "url": "#", "description": "Graded difficulty practice set" },
+              { "title": "Online Quiz — Calculus Basics", "url": "#", "description": "Interactive quiz with instant feedback" }
+            ],
+            "links": [
+              { "title": "Paul's Online Math Notes", "url": "https://tutorial.math.lamar.edu/", "description": "Best free calculus reference" },
+              { "title": "Wolfram Alpha", "url": "https://www.wolframalpha.com/", "description": "Solve and verify problems" }
+            ]
+          }
+        },
+        {
+          "id": "math-u2",
+          "title": "Integral Calculus",
+          "description": "Definite and indefinite integrals, integration techniques, and applications",
+          "resources": {
+            "notes": [
+              { "title": "Integration Techniques Summary", "url": "#", "description": "Substitution, by parts, partial fractions" }
+            ],
+            "pdfs": [
+              { "title": "Integration Worksheet Pack", "url": "#", "description": "50 problems across all techniques" }
+            ],
+            "videos": [
+              { "title": "Integration Full Course", "url": "https://www.youtube.com/watch?v=rfG8ce4nNh0", "description": "Comprehensive integration lecture" }
+            ],
+            "pyqs": [
+              { "title": "2024 Integration Questions", "url": "#", "description": "10-year compiled PYQs" }
+            ],
+            "practice": [
+              { "title": "Integration Practice Set", "url": "#", "description": "40 problems with answers" }
+            ],
+            "links": [
+              { "title": "Khan Academy — Integrals", "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new", "description": "Free interactive lessons" }
+            ]
+          }
+        },
+        {
+          "id": "math-u3",
+          "title": "Linear Algebra",
+          "description": "Matrices, vectors, eigenvalues, and linear transformations",
+          "resources": {
+            "notes": [
+              { "title": "Matrix Operations — Full Notes", "url": "#", "description": "Addition, multiplication, inverse, determinants" }
+            ],
+            "pdfs": [
+              { "title": "Linear Algebra Reference Sheet", "url": "#", "description": "One-page formula cheat sheet" }
+            ],
+            "videos": [
+              { "title": "3Blue1Brown — Essence of Linear Algebra", "url": "https://www.youtube.com/watch?v=fNk_zzaMoSs", "description": "Best visual intro to linear algebra" }
+            ],
+            "pyqs": [
+              { "title": "Matrix PYQ Compilation", "url": "#", "description": "5 years of exam questions" }
+            ],
+            "practice": [
+              { "title": "Matrix Problems Set", "url": "#", "description": "30 graded problems" }
+            ],
+            "links": [
+              { "title": "MIT OpenCourseWare — Linear Algebra", "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/", "description": "Full MIT course for free" }
+            ]
+          }
+        },
+        {
+          "id": "math-u4",
+          "title": "Differential Equations",
+          "description": "ODEs, PDEs, solution methods and engineering applications",
+          "resources": {
+            "notes": [
+              { "title": "ODE Solution Methods", "url": "#", "description": "Separable, linear, exact equations" }
+            ],
+            "pdfs": [
+              { "title": "Differential Equations Workbook", "url": "#", "description": "Theory + 60 practice problems" }
+            ],
+            "videos": [
+              { "title": "Dr. Trefor Bazett — ODEs Playlist", "url": "https://www.youtube.com/watch?v=eSty7oo09ZI", "description": "Complete ODE course" }
+            ],
+            "pyqs": [
+              { "title": "2024 ODE Exam Paper", "url": "#", "description": "Full solved paper" }
+            ],
+            "practice": [
+              { "title": "ODE Practice Problems", "url": "#", "description": "25 mixed problems" }
+            ],
+            "links": [
+              { "title": "Paul's ODE Notes", "url": "https://tutorial.math.lamar.edu/Classes/DE/DE.aspx", "description": "Comprehensive free ODE reference" }
+            ]
+          }
+        },
+        {
+          "id": "math-u5",
+          "title": "Probability & Statistics",
+          "description": "Probability theory, distributions, hypothesis testing, and regression",
+          "resources": {
+            "notes": [
+              { "title": "Probability Fundamentals", "url": "#", "description": "Bayes theorem, conditional probability" }
+            ],
+            "pdfs": [
+              { "title": "Statistics Formula Sheet", "url": "#", "description": "All key formulas in one page" }
+            ],
+            "videos": [
+              { "title": "StatQuest — Probability Basics", "url": "https://www.youtube.com/watch?v=uzkc-qNVoOk", "description": "Fun, clear statistics videos" }
+            ],
+            "pyqs": [
+              { "title": "Probability PYQs", "url": "#", "description": "Previous semester questions" }
+            ],
+            "practice": [
+              { "title": "Statistics Problem Bank", "url": "#", "description": "50 problems with step-by-step solutions" }
+            ],
+            "links": [
+              { "title": "Khan Academy — Statistics", "url": "https://www.khanacademy.org/math/statistics-probability", "description": "Free complete statistics course" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "shortName": "PHY",
+      "description": "Mechanics, electromagnetism, thermodynamics, and modern physics",
+      "color": "#0ea5e9",
+      "icon": "⚛️",
+      "units": [
+        {
+          "id": "phy-u1",
+          "title": "Classical Mechanics",
+          "description": "Newton's laws, kinematics, work-energy theorem, and momentum",
+          "resources": {
+            "notes": [{ "title": "Mechanics Complete Notes", "url": "#", "description": "All topics with diagrams" }],
+            "pdfs": [{ "title": "Mechanics Problem Set", "url": "#", "description": "50 solved problems" }],
+            "videos": [{ "title": "Walter Lewin — Mechanics Lectures", "url": "https://www.youtube.com/watch?v=wWnfJ0-xXRE", "description": "MIT physics lectures" }],
+            "pyqs": [{ "title": "2024 Mechanics Paper", "url": "#", "description": "Full solved exam" }],
+            "practice": [{ "title": "Mechanics Drills", "url": "#", "description": "30 numerical problems" }],
+            "links": [{ "title": "HyperPhysics", "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/index.html", "description": "Concept maps for all physics topics" }]
+          }
+        },
+        {
+          "id": "phy-u2",
+          "title": "Electromagnetism",
+          "description": "Electric fields, magnetic fields, Maxwell's equations, and circuits",
+          "resources": {
+            "notes": [{ "title": "EM Field Theory Notes", "url": "#", "description": "Electric + magnetic field derivations" }],
+            "pdfs": [{ "title": "EM Formula Collection", "url": "#", "description": "All Maxwell equations explained" }],
+            "videos": [{ "title": "Electricity and Magnetism — MIT OCW", "url": "https://www.youtube.com/watch?v=rtlJoXxlSFE", "description": "Full EM course lecture" }],
+            "pyqs": [{ "title": "EM PYQs 2022–2024", "url": "#", "description": "Compiled previous questions" }],
+            "practice": [{ "title": "Circuit Problems Set", "url": "#", "description": "40 circuit analysis problems" }],
+            "links": [{ "title": "PhET Simulations", "url": "https://phet.colorado.edu/en/simulations/filter?subjects=physics", "description": "Interactive physics simulations" }]
+          }
+        },
+        {
+          "id": "phy-u3",
+          "title": "Thermodynamics",
+          "description": "Laws of thermodynamics, heat engines, entropy, and statistical mechanics",
+          "resources": {
+            "notes": [{ "title": "Thermodynamics Laws Summary", "url": "#", "description": "All 4 laws with examples" }],
+            "pdfs": [{ "title": "Thermo Problem Workbook", "url": "#", "description": "35 solved numerical problems" }],
+            "videos": [{ "title": "Thermodynamics Full Course", "url": "https://www.youtube.com/watch?v=qTg7QK2UGhU", "description": "Comprehensive thermodynamics lecture" }],
+            "pyqs": [{ "title": "Thermo Exam Papers", "url": "#", "description": "2021–2024 solved papers" }],
+            "practice": [{ "title": "Entropy Problems", "url": "#", "description": "20 entropy calculation problems" }],
+            "links": [{ "title": "Engineering Toolbox — Thermo", "url": "https://www.engineeringtoolbox.com/thermodynamics-t_94.html", "description": "Reference data and formulas" }]
+          }
+        },
+        {
+          "id": "phy-u4",
+          "title": "Waves & Optics",
+          "description": "Wave motion, interference, diffraction, and optical instruments",
+          "resources": {
+            "notes": [{ "title": "Wave Properties Notes", "url": "#", "description": "Amplitude, frequency, wavelength, phase" }],
+            "pdfs": [{ "title": "Optics Lab Manual", "url": "#", "description": "Experiments and observations" }],
+            "videos": [{ "title": "Waves and Sound — Khan Academy", "url": "https://www.youtube.com/watch?v=b1t41Q3xRM8", "description": "Wave mechanics explained visually" }],
+            "pyqs": [{ "title": "Optics PYQs", "url": "#", "description": "Previous exam questions" }],
+            "practice": [{ "title": "Wave Problems", "url": "#", "description": "25 wave equation problems" }],
+            "links": [{ "title": "The Physics Classroom — Waves", "url": "https://www.physicsclassroom.com/class/waves", "description": "Free wave mechanics lessons" }]
+          }
+        },
+        {
+          "id": "phy-u5",
+          "title": "Modern Physics",
+          "description": "Quantum mechanics, special relativity, nuclear physics, and semiconductors",
+          "resources": {
+            "notes": [{ "title": "Quantum Mechanics Intro", "url": "#", "description": "Wave-particle duality, uncertainty principle" }],
+            "pdfs": [{ "title": "Modern Physics Summary", "url": "#", "description": "Key concepts in 20 pages" }],
+            "videos": [{ "title": "Quantum Physics for Beginners", "url": "https://www.youtube.com/watch?v=CBrsWPCp_rs", "description": "Accessible quantum mechanics intro" }],
+            "pyqs": [{ "title": "Modern Physics Exam Paper", "url": "#", "description": "2024 solved paper" }],
+            "practice": [{ "title": "Quantum Problems Set", "url": "#", "description": "20 problems on photoelectric effect etc." }],
+            "links": [{ "title": "Stanford Encyclopedia — Quantum Mechanics", "url": "https://plato.stanford.edu/entries/qm/", "description": "Rigorous quantum mechanics reference" }]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "shortName": "CS",
+      "description": "Algorithms, data structures, operating systems, and software engineering",
+      "color": "#10b981",
+      "icon": "💻",
+      "units": [
+        {
+          "id": "cs-u1",
+          "title": "Data Structures",
+          "description": "Arrays, linked lists, stacks, queues, trees, graphs, and hash tables",
+          "resources": {
+            "notes": [{ "title": "DS Complete Notes", "url": "#", "description": "All data structures with time complexities" }],
+            "pdfs": [{ "title": "CLRS Reference Chapters", "url": "#", "description": "Selected chapters from the textbook" }],
+            "videos": [{ "title": "Abdul Bari — Data Structures Playlist", "url": "https://www.youtube.com/watch?v=0IAPZzGSbME", "description": "Best DS playlist on YouTube" }],
+            "pyqs": [{ "title": "DS Exam Papers 2022–2024", "url": "#", "description": "Compiled with solutions" }],
+            "practice": [{ "title": "LeetCode — DS Problems", "url": "https://leetcode.com/problemset/", "description": "Practice coding problems" }],
+            "links": [{ "title": "VisuAlgo", "url": "https://visualgo.net/en", "description": "Visualize algorithms and data structures" }]
+          }
+        },
+        {
+          "id": "cs-u2",
+          "title": "Algorithms",
+          "description": "Sorting, searching, dynamic programming, greedy algorithms, and graph algorithms",
+          "resources": {
+            "notes": [{ "title": "Algorithm Design Notes", "url": "#", "description": "DP, greedy, divide and conquer" }],
+            "pdfs": [{ "title": "Algorithm Cheat Sheet", "url": "#", "description": "Complexity table for common algorithms" }],
+            "videos": [{ "title": "MIT — Introduction to Algorithms", "url": "https://www.youtube.com/watch?v=HtSuA80QTyo", "description": "Full MIT algorithms course" }],
+            "pyqs": [{ "title": "Algorithm Exam Questions", "url": "#", "description": "5 years compiled" }],
+            "practice": [{ "title": "DP Problems Set", "url": "#", "description": "30 dynamic programming problems" }],
+            "links": [{ "title": "CP-Algorithms", "url": "https://cp-algorithms.com/", "description": "Competitive programming algorithms reference" }]
+          }
+        },
+        {
+          "id": "cs-u3",
+          "title": "Operating Systems",
+          "description": "Process management, memory management, file systems, and synchronization",
+          "resources": {
+            "notes": [{ "title": "OS Concepts Notes", "url": "#", "description": "Processes, threads, scheduling, memory" }],
+            "pdfs": [{ "title": "OS Galvin Textbook Summary", "url": "#", "description": "Chapter summaries of the main textbook" }],
+            "videos": [{ "title": "Neso Academy — OS Playlist", "url": "https://www.youtube.com/watch?v=vBURTt97EkA", "description": "Complete OS playlist" }],
+            "pyqs": [{ "title": "OS PYQs 2023–2024", "url": "#", "description": "Solved exam papers" }],
+            "practice": [{ "title": "OS Numericals", "url": "#", "description": "Scheduling and memory problems" }],
+            "links": [{ "title": "OSDev Wiki", "url": "https://wiki.osdev.org/", "description": "OS development reference" }]
+          }
+        },
+        {
+          "id": "cs-u4",
+          "title": "Database Management",
+          "description": "Relational databases, SQL, normalization, transactions, and NoSQL",
+          "resources": {
+            "notes": [{ "title": "DBMS Notes", "url": "#", "description": "ER diagrams, normalization, SQL queries" }],
+            "pdfs": [{ "title": "SQL Reference Guide", "url": "#", "description": "All SQL commands with examples" }],
+            "videos": [{ "title": "freeCodeCamp — SQL Full Course", "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY", "description": "Complete beginner to advanced SQL" }],
+            "pyqs": [{ "title": "DBMS PYQs", "url": "#", "description": "Previous year exam papers" }],
+            "practice": [{ "title": "SQL Practice Problems", "url": "https://www.hackerrank.com/domains/sql", "description": "HackerRank SQL challenges" }],
+            "links": [{ "title": "SQLZoo", "url": "https://sqlzoo.net/", "description": "Interactive SQL practice environment" }]
+          }
+        },
+        {
+          "id": "cs-u5",
+          "title": "Computer Networks",
+          "description": "OSI model, TCP/IP, protocols, routing, and network security",
+          "resources": {
+            "notes": [{ "title": "Networks Notes", "url": "#", "description": "OSI layers, TCP/IP stack, protocols" }],
+            "pdfs": [{ "title": "Networking Tanenbaum Summary", "url": "#", "description": "Key chapters summarized" }],
+            "videos": [{ "title": "Kurose & Ross — Networking Lectures", "url": "https://www.youtube.com/watch?v=74sEFYBBRAY", "description": "University-level networking course" }],
+            "pyqs": [{ "title": "Networks PYQs", "url": "#", "description": "Previous exam papers" }],
+            "practice": [{ "title": "Networking Numericals", "url": "#", "description": "Subnetting and routing problems" }],
+            "links": [{ "title": "Cisco NetAcad", "url": "https://www.netacad.com/", "description": "Free networking courses" }]
+          }
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "shortName": "CHEM",
+      "description": "Organic, inorganic, physical chemistry and chemical engineering fundamentals",
+      "color": "#f59e0b",
+      "icon": "🧪",
+      "units": [
+        {
+          "id": "chem-u1",
+          "title": "Atomic Structure & Bonding",
+          "description": "Quantum model of atom, electronic configuration, ionic and covalent bonds",
+          "resources": {
+            "notes": [{ "title": "Atomic Structure Notes", "url": "#", "description": "Bohr model to quantum model" }],
+            "pdfs": [{ "title": "Bonding Reference Sheets", "url": "#", "description": "Bond types, geometries, polarity" }],
+            "videos": [{ "title": "Crash Course Chemistry — Atomic Structure", "url": "https://www.youtube.com/watch?v=FSyAehMdpyI", "description": "Clear intro to atomic theory" }],
+            "pyqs": [{ "title": "Atomic Structure PYQs", "url": "#", "description": "Exam questions with solutions" }],
+            "practice": [{ "title": "Configuration Problems", "url": "#", "description": "Electronic configuration exercises" }],
+            "links": [{ "title": "Khan Academy — Chemistry", "url": "https://www.khanacademy.org/science/chemistry", "description": "Free chemistry lessons" }]
+          }
+        },
+        {
+          "id": "chem-u2",
+          "title": "Chemical Thermodynamics",
+          "description": "Enthalpy, entropy, Gibbs free energy, and equilibrium constants",
+          "resources": {
+            "notes": [{ "title": "Thermo Chemistry Notes", "url": "#", "description": "Hess's law, Born-Haber cycle" }],
+            "pdfs": [{ "title": "Thermodynamics Problem Book", "url": "#", "description": "45 solved problems" }],
+            "videos": [{ "title": "Gibbs Free Energy Explained", "url": "https://www.youtube.com/watch?v=ViAmQivKif0", "description": "Clear thermodynamics lecture" }],
+            "pyqs": [{ "title": "Thermo PYQs", "url": "#", "description": "Previous exam papers" }],
+            "practice": [{ "title": "Enthalpy Calculations", "url": "#", "description": "30 numerical problems" }],
+            "links": [{ "title": "LibreTexts Chemistry", "url": "https://chem.libretexts.org/", "description": "Free open chemistry textbook" }]
+          }
+        },
+        {
+          "id": "chem-u3",
+          "title": "Organic Chemistry",
+          "description": "Hydrocarbons, functional groups, reaction mechanisms, and stereochemistry",
+          "resources": {
+            "notes": [{ "title": "Organic Reactions Summary", "url": "#", "description": "All major reactions with mechanisms" }],
+            "pdfs": [{ "title": "Functional Groups Reference", "url": "#", "description": "Complete guide to functional groups" }],
+            "videos": [{ "title": "Professor Dave — Organic Chemistry", "url": "https://www.youtube.com/watch?v=GJdB7LPiOkw", "description": "Best organic chemistry playlist" }],
+            "pyqs": [{ "title": "Organic Chemistry PYQs", "url": "#", "description": "5 years of exam questions" }],
+            "practice": [{ "title": "Reaction Mechanism Problems", "url": "#", "description": "40 mechanism drawing exercises" }],
+            "links": [{ "title": "Master Organic Chemistry", "url": "https://www.masterorganicchemistry.com/", "description": "Best organic chemistry study site" }]
+          }
+        },
+        {
+          "id": "chem-u4",
+          "title": "Electrochemistry",
+          "description": "Electrochemical cells, electrode potentials, electrolysis, and batteries",
+          "resources": {
+            "notes": [{ "title": "Electrochemistry Notes", "url": "#", "description": "Galvanic and electrolytic cells" }],
+            "pdfs": [{ "title": "Electrochemistry Problems", "url": "#", "description": "30 solved numerical problems" }],
+            "videos": [{ "title": "Electrochemistry Full Lecture", "url": "https://www.youtube.com/watch?v=Fxmo-T-3Lts", "description": "Comprehensive electrochemistry course" }],
+            "pyqs": [{ "title": "Electrochemistry PYQs", "url": "#", "description": "Previous year papers" }],
+            "practice": [{ "title": "Cell Potential Problems", "url": "#", "description": "Nernst equation and EMF calculations" }],
+            "links": [{ "title": "Electrochemistry Society Resources", "url": "https://www.electrochem.org/student-resources", "description": "Student learning resources" }]
+          }
+        },
+        {
+          "id": "chem-u5",
+          "title": "Spectroscopy & Analytical Methods",
+          "description": "IR, NMR, mass spectroscopy, and chromatography techniques",
+          "resources": {
+            "notes": [{ "title": "Spectroscopy Techniques Notes", "url": "#", "description": "IR, NMR interpretation guide" }],
+            "pdfs": [{ "title": "Spectroscopy Problem Book", "url": "#", "description": "Spectrum interpretation exercises" }],
+            "videos": [{ "title": "NMR Spectroscopy Explained", "url": "https://www.youtube.com/watch?v=SBir5wUS3Bo", "description": "Clear NMR tutorial" }],
+            "pyqs": [{ "title": "Spectroscopy PYQs", "url": "#", "description": "Exam papers with spectrum questions" }],
+            "practice": [{ "title": "Spectrum Interpretation Set", "url": "#", "description": "25 practice spectra" }],
+            "links": [{ "title": "SDBS Spectral Database", "url": "https://sdbs.db.aist.go.jp/", "description": "Huge spectral reference database" }]
+          }
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "Technical English",
+      "shortName": "ENG",
+      "description": "Technical writing, communication skills, and professional English",
+      "color": "#ec4899",
+      "icon": "📝",
+      "units": [
+        {
+          "id": "eng-u1",
+          "title": "Technical Writing",
+          "description": "Report writing, documentation, proposals, and academic paper structure",
+          "resources": {
+            "notes": [{ "title": "Technical Writing Guide", "url": "#", "description": "Structure, style, and clarity rules" }],
+            "pdfs": [{ "title": "Report Writing Templates", "url": "#", "description": "Sample reports with annotations" }],
+            "videos": [{ "title": "Technical Writing for Engineers", "url": "https://www.youtube.com/watch?v=OeNJ9lFTfTM", "description": "Practical writing techniques" }],
+            "pyqs": [{ "title": "Technical Writing PYQs", "url": "#", "description": "Past exam writing tasks" }],
+            "practice": [{ "title": "Writing Exercises Set", "url": "#", "description": "10 report writing prompts" }],
+            "links": [{ "title": "Purdue OWL", "url": "https://owl.purdue.edu/owl/general_writing/", "description": "Best academic writing guide online" }]
+          }
+        },
+        {
+          "id": "eng-u2",
+          "title": "Presentation Skills",
+          "description": "Public speaking, slide design, body language, and audience engagement",
+          "resources": {
+            "notes": [{ "title": "Presentation Techniques Notes", "url": "#", "description": "Structure, delivery, and design tips" }],
+            "pdfs": [{ "title": "Slide Design Best Practices", "url": "#", "description": "Visual communication guide" }],
+            "videos": [{ "title": "TED Talk Tips", "url": "https://www.youtube.com/watch?v=Unzc731iCUY", "description": "How TED speakers present effectively" }],
+            "pyqs": [{ "title": "Presentation Assessment Rubrics", "url": "#", "description": "Grading criteria for presentations" }],
+            "practice": [{ "title": "Mock Presentation Topics", "url": "#", "description": "10 practice presentation topics" }],
+            "links": [{ "title": "Canva — Presentation Templates", "url": "https://www.canva.com/presentations/", "description": "Free slide design tool" }]
+          }
+        },
+        {
+          "id": "eng-u3",
+          "title": "Grammar & Vocabulary",
+          "description": "Advanced grammar rules, technical vocabulary, and language precision",
+          "resources": {
+            "notes": [{ "title": "Advanced Grammar Notes", "url": "#", "description": "Tenses, conditionals, modal verbs" }],
+            "pdfs": [{ "title": "Technical Vocabulary List", "url": "#", "description": "500 engineering/science terms" }],
+            "videos": [{ "title": "Grammar Lessons — British Council", "url": "https://www.youtube.com/watch?v=Pm8g0-O9KAU", "description": "Professional English grammar" }],
+            "pyqs": [{ "title": "Grammar PYQs", "url": "#", "description": "Previous language exam papers" }],
+            "practice": [{ "title": "Grammar Exercises", "url": "https://www.grammarly.com/blog/category/handbook/", "description": "Interactive grammar practice" }],
+            "links": [{ "title": "Merriam-Webster Dictionary", "url": "https://www.merriam-webster.com/", "description": "Authoritative English dictionary" }]
+          }
+        },
+        {
+          "id": "eng-u4",
+          "title": "Reading Comprehension",
+          "description": "Analytical reading, inference, summarization, and critical thinking",
+          "resources": {
+            "notes": [{ "title": "Reading Strategies", "url": "#", "description": "Skimming, scanning, and critical analysis" }],
+            "pdfs": [{ "title": "Reading Comprehension Passages", "url": "#", "description": "10 passages with questions and answers" }],
+            "videos": [{ "title": "Speed Reading Techniques", "url": "https://www.youtube.com/watch?v=ZwEquW_Yij0", "description": "Improve reading comprehension speed" }],
+            "pyqs": [{ "title": "Reading Comprehension PYQs", "url": "#", "description": "Previous exam reading tasks" }],
+            "practice": [{ "title": "Practice Passages", "url": "#", "description": "20 reading comprehension exercises" }],
+            "links": [{ "title": "ReadWorks", "url": "https://www.readworks.org/", "description": "Free reading comprehension passages" }]
+          }
+        },
+        {
+          "id": "eng-u5",
+          "title": "Email & Professional Communication",
+          "description": "Business email writing, formal letters, and workplace communication norms",
+          "resources": {
+            "notes": [{ "title": "Email Etiquette Guide", "url": "#", "description": "Formal vs. informal, subject lines, tone" }],
+            "pdfs": [{ "title": "Business Letter Templates", "url": "#", "description": "10 common business letter formats" }],
+            "videos": [{ "title": "Professional Email Writing", "url": "https://www.youtube.com/watch?v=Py6QV6HYWJA", "description": "Write professional emails" }],
+            "pyqs": [{ "title": "Letter Writing PYQs", "url": "#", "description": "Previous exam letter tasks" }],
+            "practice": [{ "title": "Email Drafting Exercises", "url": "#", "description": "Write 5 types of professional emails" }],
+            "links": [{ "title": "Grammarly Business", "url": "https://www.grammarly.com/business", "description": "Professional writing assistant" }]
+          }
+        }
+      ]
+    },
+    {
+      "id": "economics",
+      "name": "Engineering Economics",
+      "shortName": "ECO",
+      "description": "Economic analysis, cost-benefit analysis, and financial decision making for engineers",
+      "color": "#8b5cf6",
+      "icon": "📊",
+      "units": [
+        {
+          "id": "eco-u1",
+          "title": "Basic Economic Concepts",
+          "description": "Supply and demand, market equilibrium, elasticity, and consumer behavior",
+          "resources": {
+            "notes": [{ "title": "Micro Economics Notes", "url": "#", "description": "Demand, supply, and market structures" }],
+            "pdfs": [{ "title": "Economics Textbook Chapter 1–3", "url": "#", "description": "Core economic principles" }],
+            "videos": [{ "title": "Economics for Beginners", "url": "https://www.youtube.com/watch?v=aEnTyKaMYA0", "description": "Intro to economics concepts" }],
+            "pyqs": [{ "title": "Economics PYQs", "url": "#", "description": "Previous year exam papers" }],
+            "practice": [{ "title": "Supply-Demand Problems", "url": "#", "description": "Graph and calculation exercises" }],
+            "links": [{ "title": "Investopedia", "url": "https://www.investopedia.com/", "description": "Financial and economics reference" }]
+          }
+        },
+        {
+          "id": "eco-u2",
+          "title": "Time Value of Money",
+          "description": "Present value, future value, NPV, IRR, and annuities",
+          "resources": {
+            "notes": [{ "title": "TVM Complete Notes", "url": "#", "description": "PV, FV, NPV, IRR formulas and examples" }],
+            "pdfs": [{ "title": "TVM Problem Book", "url": "#", "description": "50 numerical problems with solutions" }],
+            "videos": [{ "title": "Time Value of Money — Khan Academy", "url": "https://www.youtube.com/watch?v=G4dXY0Ih1-Y", "description": "TVM explained clearly" }],
+            "pyqs": [{ "title": "TVM PYQs", "url": "#", "description": "Previous exam numericals" }],
+            "practice": [{ "title": "NPV/IRR Problems", "url": "#", "description": "30 engineering economics problems" }],
+            "links": [{ "title": "Calculator.net — Finance", "url": "https://www.calculator.net/financial-calculator.html", "description": "Online TVM calculators" }]
+          }
+        },
+        {
+          "id": "eco-u3",
+          "title": "Cost Analysis",
+          "description": "Fixed and variable costs, break-even analysis, and cost-volume-profit",
+          "resources": {
+            "notes": [{ "title": "Cost Analysis Notes", "url": "#", "description": "Types of costs and cost behavior" }],
+            "pdfs": [{ "title": "Break-Even Problems", "url": "#", "description": "25 BEP calculation problems" }],
+            "videos": [{ "title": "Break-Even Analysis Tutorial", "url": "https://www.youtube.com/watch?v=9Ect9VH7i_I", "description": "Full cost analysis lecture" }],
+            "pyqs": [{ "title": "Cost Analysis PYQs", "url": "#", "description": "Previous exam problems" }],
+            "practice": [{ "title": "CVP Problem Set", "url": "#", "description": "Cost-volume-profit exercises" }],
+            "links": [{ "title": "AccountingCoach", "url": "https://www.accountingcoach.com/", "description": "Free accounting and finance tutorials" }]
+          }
+        },
+        {
+          "id": "eco-u4",
+          "title": "Project Evaluation",
+          "description": "Capital budgeting, depreciation methods, and project feasibility analysis",
+          "resources": {
+            "notes": [{ "title": "Project Evaluation Notes", "url": "#", "description": "Payback period, NPV, IRR comparison" }],
+            "pdfs": [{ "title": "Capital Budgeting Problems", "url": "#", "description": "35 project evaluation exercises" }],
+            "videos": [{ "title": "Capital Budgeting Explained", "url": "https://www.youtube.com/watch?v=fZXWQ7R0ov8", "description": "Project selection techniques" }],
+            "pyqs": [{ "title": "Project Evaluation PYQs", "url": "#", "description": "Previous exam papers" }],
+            "practice": [{ "title": "Depreciation Problems", "url": "#", "description": "SLM, WDV, and SOYD method problems" }],
+            "links": [{ "title": "Corporate Finance Institute", "url": "https://corporatefinanceinstitute.com/", "description": "Free finance and accounting courses" }]
+          }
+        },
+        {
+          "id": "eco-u5",
+          "title": "Risk & Decision Analysis",
+          "description": "Decision trees, sensitivity analysis, risk assessment, and economic forecasting",
+          "resources": {
+            "notes": [{ "title": "Risk Analysis Notes", "url": "#", "description": "Decision making under uncertainty" }],
+            "pdfs": [{ "title": "Decision Tree Problems", "url": "#", "description": "20 decision tree problems with solutions" }],
+            "videos": [{ "title": "Decision Trees Explained", "url": "https://www.youtube.com/watch?v=a5yWr1hr6QY", "description": "Decision analysis tutorial" }],
+            "pyqs": [{ "title": "Decision Analysis PYQs", "url": "#", "description": "Previous year questions" }],
+            "practice": [{ "title": "Sensitivity Analysis Problems", "url": "#", "description": "Practice scenarios for decision making" }],
+            "links": [{ "title": "Decision Making Resources", "url": "https://www.mindtools.com/", "description": "Frameworks for professional decisions" }]
+          }
+        }
+      ]
+    },
+    {
+      "id": "elective",
+      "name": "Environmental Science",
+      "shortName": "EVS",
+      "description": "Ecology, pollution control, sustainable development, and environmental policy",
+      "color": "#14b8a6",
+      "icon": "🌱",
+      "units": [
+        {
+          "id": "evs-u1",
+          "title": "Ecosystems & Biodiversity",
+          "description": "Food chains, ecological balance, biodiversity conservation, and biomes",
+          "resources": {
+            "notes": [{ "title": "Ecosystem Notes", "url": "#", "description": "Energy flow, nutrient cycles, biodiversity" }],
+            "pdfs": [{ "title": "Biodiversity Study Guide", "url": "#", "description": "Species, habitats, and conservation" }],
+            "videos": [{ "title": "Ecosystems Explained — Crash Course", "url": "https://www.youtube.com/watch?v=izR9eDCBFRU", "description": "Engaging ecology overview" }],
+            "pyqs": [{ "title": "Ecosystem PYQs", "url": "#", "description": "Previous exam questions" }],
+            "practice": [{ "title": "Food Web Problems", "url": "#", "description": "Diagram and analysis exercises" }],
+            "links": [{ "title": "IUCN Red List", "url": "https://www.iucnredlist.org/", "description": "Biodiversity and conservation data" }]
+          }
+        },
+        {
+          "id": "evs-u2",
+          "title": "Environmental Pollution",
+          "description": "Air, water, soil, and noise pollution — causes, effects, and control",
+          "resources": {
+            "notes": [{ "title": "Pollution Types & Control", "url": "#", "description": "All pollution types with remediation methods" }],
+            "pdfs": [{ "title": "Pollution Control Standards", "url": "#", "description": "Government standards and thresholds" }],
+            "videos": [{ "title": "Air Pollution Explained", "url": "https://www.youtube.com/watch?v=e6rglsLy1Ys", "description": "Causes and effects of air pollution" }],
+            "pyqs": [{ "title": "Pollution PYQs", "url": "#", "description": "Previous exam questions" }],
+            "practice": [{ "title": "Case Study Analysis", "url": "#", "description": "5 real pollution case studies" }],
+            "links": [{ "title": "EPA Environmental Resources", "url": "https://www.epa.gov/environmental-topics", "description": "US EPA educational resources" }]
+          }
+        },
+        {
+          "id": "evs-u3",
+          "title": "Climate Change & Global Warming",
+          "description": "Greenhouse gases, climate models, impacts, and mitigation strategies",
+          "resources": {
+            "notes": [{ "title": "Climate Change Notes", "url": "#", "description": "GHG effect, tipping points, solutions" }],
+            "pdfs": [{ "title": "IPCC Report Summary", "url": "#", "description": "Key findings from IPCC 2024 report" }],
+            "videos": [{ "title": "Climate Science Basics — NASA", "url": "https://www.youtube.com/watch?v=HBt4vGPFIrA", "description": "NASA explainer on climate change" }],
+            "pyqs": [{ "title": "Climate Change PYQs", "url": "#", "description": "Previous year questions" }],
+            "practice": [{ "title": "Carbon Footprint Calculations", "url": "#", "description": "GHG emission estimation problems" }],
+            "links": [{ "title": "NASA Climate", "url": "https://climate.nasa.gov/", "description": "Latest climate data and visuals" }]
+          }
+        },
+        {
+          "id": "evs-u4",
+          "title": "Renewable Energy",
+          "description": "Solar, wind, hydro, geothermal, and bioenergy systems and technologies",
+          "resources": {
+            "notes": [{ "title": "Renewable Energy Systems Notes", "url": "#", "description": "Working principles of each energy type" }],
+            "pdfs": [{ "title": "Energy Efficiency Guide", "url": "#", "description": "How to calculate and improve efficiency" }],
+            "videos": [{ "title": "How Solar Panels Work", "url": "https://www.youtube.com/watch?v=xKxrkht7CpY", "description": "Visual explainer on photovoltaics" }],
+            "pyqs": [{ "title": "Renewable Energy PYQs", "url": "#", "description": "Previous exam questions" }],
+            "practice": [{ "title": "Energy Conversion Problems", "url": "#", "description": "Efficiency and output calculations" }],
+            "links": [{ "title": "IRENA — Renewable Energy", "url": "https://www.irena.org/", "description": "Global renewable energy statistics" }]
+          }
+        },
+        {
+          "id": "evs-u5",
+          "title": "Environmental Laws & Ethics",
+          "description": "Environmental legislation, treaties, corporate responsibility, and green ethics",
+          "resources": {
+            "notes": [{ "title": "Environmental Law Notes", "url": "#", "description": "Key acts, treaties, and regulations" }],
+            "pdfs": [{ "title": "Green Policy Reference", "url": "#", "description": "Summary of major environmental laws" }],
+            "videos": [{ "title": "Environmental Ethics Explained", "url": "https://www.youtube.com/watch?v=sN8sJiXRKDg", "description": "Philosophy of environmental stewardship" }],
+            "pyqs": [{ "title": "Environmental Law PYQs", "url": "#", "description": "Previous exam questions" }],
+            "practice": [{ "title": "Case Law Analysis", "url": "#", "description": "5 environmental legal case studies" }],
+            "links": [{ "title": "UN Environment Programme", "url": "https://www.unep.org/", "description": "Global environmental policy and reports" }]
+          }
+        }
+      ]
+    }
+  ]
+}

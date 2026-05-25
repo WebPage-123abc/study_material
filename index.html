@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyHub — Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body data-page="dashboard">
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <div class="app">
+    <!-- ══ SIDEBAR ══ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon">S</div>
+        <span>StudyHub</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="index.html" class="sidebar-link" data-page="dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+          Dashboard
+        </a>
+        <a href="subjects.html" class="sidebar-link" data-page="subjects">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg>
+          Subjects
+        </a>
+        <a href="favorites.html" class="sidebar-link" data-page="favorites">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+          Favorites
+        </a>
+        <a href="search.html" class="sidebar-link" data-page="search">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+          Search
+        </a>
+      </nav>
+      <p class="sidebar-section-title">YOUR SUBJECTS</p>
+      <div class="sidebar-subject-list" id="sidebar-subjects-list"></div>
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="sidebar-user-avatar" id="sidebar-user-initial">Y</div>
+          <span class="sidebar-user-name" id="sidebar-user-name">Your Name</span>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle theme"><span id="theme-icon"></span></button>
+      </div>
+    </aside>
+
+    <!-- ══ MAIN CONTENT ══ -->
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-logo">
+          <div class="sidebar-logo-icon">S</div>
+          StudyHub
+        </div>
+        <button class="hamburger" id="hamburger-btn" title="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </button>
+      </div>
+
+      <div class="page">
+        <!-- Welcome -->
+        <div class="welcome-section fade-in">
+          <div class="welcome-text">
+            <h1>Welcome back, <span data-student-name>Your Name</span></h1>
+            <p><span data-semester></span> &bull; Keep up the great work!</p>
+          </div>
+          <div class="streak-card">
+            <div class="streak-icon">🔥</div>
+            <div class="streak-info">
+              <div class="streak-label">CURRENT STREAK</div>
+              <div class="streak-value" id="streak-count">1 Day</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card fade-in fade-in-delay-1">
+            <div class="stat-icon" style="background:rgba(99,102,241,0.12)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#6366f1"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" id="stat-subjects">7</div>
+              <div class="stat-label">Total Subjects</div>
+            </div>
+          </div>
+          <div class="stat-card fade-in fade-in-delay-2">
+            <div class="stat-icon" style="background:rgba(14,165,233,0.12)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#0ea5e9"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" id="stat-units">35</div>
+              <div class="stat-label">Total Units</div>
+            </div>
+          </div>
+          <div class="stat-card fade-in fade-in-delay-3">
+            <div class="stat-icon" style="background:rgba(16,185,129,0.12)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#10b981"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" id="stat-completed">0</div>
+              <div class="stat-label">Completed Units</div>
+            </div>
+          </div>
+          <div class="stat-card fade-in fade-in-delay-4">
+            <div class="stat-icon" style="background:rgba(236,72,153,0.12)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#ec4899"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" id="stat-favorites">0</div>
+              <div class="stat-label">Saved Resources</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-section fade-in fade-in-delay-2">
+          <form class="search-bar" id="search-form">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+            <input type="text" id="search-input" placeholder="Search subjects, units, and resources..." data-testid="input-search" />
+          </form>
+        </div>
+
+        <!-- Progress + Recently opened -->
+        <div class="dashboard-two-col">
+          <div>
+            <div class="section-header">
+              <h2>Course Progress</h2>
+              <a href="subjects.html" class="btn btn-ghost btn-sm">View all</a>
+            </div>
+            <div class="progress-list" id="progress-list">
+              <div class="skeleton" style="height:72px;border-radius:10px"></div>
+              <div class="skeleton" style="height:72px;border-radius:10px;animation-delay:.1s"></div>
+              <div class="skeleton" style="height:72px;border-radius:10px;animation-delay:.2s"></div>
+            </div>
+          </div>
+          <div>
+            <div class="section-header"><h2>Recently Opened</h2></div>
+            <div class="recent-section" id="recent-subjects"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
