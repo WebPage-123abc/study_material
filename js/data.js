@@ -23,7 +23,7 @@ let _data = null;
  */
 async function loadData() {
   if (_data) return _data;
-  const res = await fetch('data/data.json');
+  const res = await fetch('/api/data');
   _data = await res.json();
   return _data;
 }

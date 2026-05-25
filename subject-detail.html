@@ -93,7 +93,10 @@
         <!-- Units controls -->
         <div class="units-controls">
           <h2>Course Units</h2>
-          <button class="btn btn-outline btn-sm" id="expand-all-btn">Expand All</button>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-primary btn-sm" id="open-upload-btn" style="background-color: var(--primary); color: white;">+ Upload Resource</button>
+            <button class="btn btn-outline btn-sm" id="expand-all-btn">Expand All</button>
+          </div>
         </div>
 
         <!-- Units list — filled by subject-detail.js -->
@@ -106,6 +109,40 @@
         </div>
       </div>
     </main>
+  </div>
+
+  <!-- Upload Modal -->
+  <div class="sidebar-overlay" id="upload-modal-overlay" style="z-index: 1000;"></div>
+  <div id="upload-modal" class="modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--surface); padding: 24px; border-radius: 12px; z-index: 1001; width: 90%; max-width: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+    <h3 style="margin-top: 0; margin-bottom: 16px;">Upload Resource</h3>
+    <form id="upload-form">
+      <div style="margin-bottom: 12px;">
+        <label style="display: block; font-size: 14px; margin-bottom: 4px; color: var(--text-muted)">Unit</label>
+        <select id="upload-unit" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text);"></select>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <label style="display: block; font-size: 14px; margin-bottom: 4px; color: var(--text-muted)">Category</label>
+        <select id="upload-category" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text);">
+          <option value="notes">Notes</option>
+          <option value="pdfs">PDFs</option>
+          <option value="videos">Videos</option>
+          <option value="pyqs">PYQs</option>
+          <option value="practice">Practice</option>
+        </select>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <label style="display: block; font-size: 14px; margin-bottom: 4px; color: var(--text-muted)">Title</label>
+        <input type="text" id="upload-title" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text);" placeholder="E.g., Chapter 1 Notes">
+      </div>
+      <div style="margin-bottom: 16px;">
+        <label style="display: block; font-size: 14px; margin-bottom: 4px; color: var(--text-muted)">File</label>
+        <input type="file" id="upload-file" required style="width: 100%; color: var(--text);">
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 8px;">
+        <button type="button" id="close-upload-btn" class="btn btn-outline btn-sm">Cancel</button>
+        <button type="submit" id="submit-upload-btn" class="btn btn-primary btn-sm" style="background-color: var(--primary); color: white;">Upload</button>
+      </div>
+    </form>
   </div>
 
   <div id="toast-container"></div>

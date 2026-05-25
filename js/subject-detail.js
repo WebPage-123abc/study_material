@@ -133,6 +133,68 @@ document.addEventListener('DOMContentLoaded', async () => {
   /* Expand first unit by default */
   const firstUnit = document.querySelector('.accordion');
   if (firstUnit) firstUnit.classList.add('open');
+
+  /* ── Upload Modal Logic ── */
+  const uploadBtn = document.getElementById('open-upload-btn');
+  const uploadModal = document.getElementById('upload-modal');
+  const uploadOverlay = document.getElementById('upload-modal-overlay');
+  const closeUploadBtn = document.getElementById('close-upload-btn');
+  const uploadForm = document.getElementById('upload-form');
+  const unitSelect = document.getElementById('upload-unit');
+  const submitUploadBtn = document.getElementById('submit-upload-btn');
+
+  if (uploadBtn && uploadModal) {
+    uploadBtn.addEventListener('click', () => {
+      // Populate unit dropdown
+      unitSelect.innerHTML = subject.units.map(u => `<option value="${u.id}">${u.title}</option>`).join('');
+      uploadModal.style.display = 'block';
+      uploadOverlay.classList.add('open');
+    });
+
+    const closeModal = () => {
+      uploadModal.style.display = 'none';
+      uploadOverlay.classList.remove('open');
+      uploadForm.reset();
+    };
+
+    closeUploadBtn.addEventListener('click', closeModal);
+    uploadOverlay.addEventListener('click', closeModal);
+
+    uploadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById('upload-file');
+      if (!fileInput.files[0]) return;
+
+      const formData = new FormData();
+      formData.append('unit_id', document.getElementById('upload-unit').value);
+      formData.append('category', document.getElementById('upload-category').value);
+      formData.append('title', document.getElementById('upload-title').value);
+      formData.append('file', fileInput.files[0]);
+
+      submitUploadBtn.disabled = true;
+      submitUploadBtn.textContent = 'Uploading...';
+
+      try {
+        const res = await fetch('/api/upload', {
+          method: 'POST',
+          body: formData
+        });
+        
+        if (!res.ok) throw new Error('Upload failed');
+        
+        window.showToast('File uploaded successfully!', 'success');
+        closeModal();
+        
+        // Force reload to fetch new data from DB
+        setTimeout(() => window.location.reload(), 1000);
+      } catch (err) {
+        window.showToast(err.message, 'error');
+      } finally {
+        submitUploadBtn.disabled = false;
+        submitUploadBtn.textContent = 'Upload';
+      }
+    });
+  }
 });
 
 /* ── Render subject header ── */
