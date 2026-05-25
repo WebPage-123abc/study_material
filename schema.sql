@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS subjects;
 CREATE TABLE subjects (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL,
+  short_name TEXT,
   description TEXT,
   icon TEXT,
   color TEXT,

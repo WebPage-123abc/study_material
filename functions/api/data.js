@@ -45,6 +45,7 @@ export async function onRequest(context) {
       return {
         id: subject.id,
         name: subject.name,
+        shortName: subject.short_name || subject.name.substring(0, 4).toUpperCase(),
         description: subject.description,
         icon: subject.icon,
         color: subject.color,
